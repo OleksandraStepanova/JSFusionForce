@@ -1,0 +1,24 @@
+ /* MOBILE FAQ */
+.faq-title{
+    color: rgba(250, 250, 250, 0.4);
+font-family: Inter Tight;
+font-size: 16px;
+font-weight: 600;
+line-height: 24px;
+letter-spacing: -2%;
+text-align: left;
+position: static;
+width: 284px;
+height: 24px;
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: flex-start;
+padding: 0px;
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 32px 0px;
+}
+
+   /* MOBILE FAQ */
