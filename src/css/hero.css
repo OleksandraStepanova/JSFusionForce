@@ -1,0 +1,19 @@
+.hero-title-dv {
+    position: absolute;
+    width: 343px;
+    height: 250px;
+    left: 16px;
+    right: 16px;
+    top: 281px;
+    bottom: 281px;
+}
+.title-hero {
+  color: rgb(250, 250, 250);
+  font-family: Inter Tight;
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 50px;
+  letter-spacing: -3%;
+  text-align: left;
+  text-transform: uppercase;
+}
