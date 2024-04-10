@@ -1,11 +1,4 @@
-.container {
-    max-width: 375px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  /* MOBILE FAQ */
+ /* MOBILE FAQ */
 .faq-title{
     color: rgba(250, 250, 250, 0.4);
 font-family: Inter Tight;
