@@ -28,7 +28,7 @@
   --main-text: #fafafa;
 }
 
-.conteiner {
+.container {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -36,7 +36,7 @@
   margin-right: auto;
 }
 @media (max-width: 767px) {
-  .conteiner {
+  .container {
     max-width: 375px;
     padding-left: 16px;
     padding-right: 16px;
@@ -44,14 +44,14 @@
 }
 
 @media (min-width: 768px) {
-  .conteiner {
+  .container {
     max-width: 768px;
     padding-left: 32px;
     padding-right: 32px;
   }
 }
 @media (min-width: 1440px) {
-  .conteiner {
+  .container {
     max-width: 1440px;
   }
 }
