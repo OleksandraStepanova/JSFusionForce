@@ -1,0 +1,32 @@
+.visually-hidden{
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+        outline: 0;
+outline-offset: 0;
+pointer-events: none;
+}
+.covers{
+    min-width: 1440px;
+    min-height: 960px;
+
+    background: linear-gradient(90deg, #1d1c20 49.68%, #69292d 67.73%, #ed3b44 100%);
+    transform: rotate(-180deg);
+}
+.covers-container{
+    width: 1440px;
+    height: 960px;
+}
+.image-1{
+    width: 544px;
+    height: 314px;
+    transform: rotate(-16deg);
+}
