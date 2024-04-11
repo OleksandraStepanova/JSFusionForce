@@ -82,6 +82,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+}
+
+.content-icon {
+  fill: transparent;
+  stroke: white;
+}
+
+.left {
+  transform: rotate(180deg);
 }
 
 @media (min-width: 768px) {
