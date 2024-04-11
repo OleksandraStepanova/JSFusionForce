@@ -15,7 +15,44 @@
   </head>
   <body>
     <header class="header">
-
+    <div class="container header-container">
+        <nav class="nav-header">
+            <div class="logo">
+                <div class="logo-header-img">
+                    <picture>
+                        <source srcset="../img/desktop/logo-desktop.png 1x,
+                        ../img/desktop/logo-desktop@2x.png 2x
+                                " media="(min-width: 1280px)" />
+                        <source srcset="
+                        ../img/desktop/logo-tablet.png 1x,
+                        ../img/desktop/logo-tablet@2x.png 2x
+                                 " media="(min-width: 768px)" />
+                        <source srcset="
+                        ../img/desktop/logo.png 1x,
+                        ../img/desktop/logo@2x.png 2x
+                                " media="(max-width: 767px)" />
+                        <img class="logo-img" src="../img/mobile/logo.png" alt="logo" />
+                    </picture>
+                </div>
+                  <div class="logo-svg">
+                  <span>
+                    <img src="../img/icons.svg#" alt="">
+                </span>
+                </div>
+                </div>
+              </div>
+              <button class="menu-toggle" aria-label="Toggle Menu">
+                <span class="burger">Menu</span>
+              </button>
+              <ul class="menu">
+                <li><a href="#">About me</a></li>
+                <li><a href="#">Benefits</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">FAQ</a></li>
+              </ul>
+              <a href="#work-together" class="order-button">Order the project</a>
+        </nav>
+    </div>
 </header>
 
     <section class="hero">
