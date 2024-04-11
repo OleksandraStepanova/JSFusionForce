@@ -15,20 +15,21 @@ outline-offset: 0;
 pointer-events: none;
 } */
 .covers{
-    min-width: 1440px;
-    min-height: 960px;
-    background: linear-gradient(90deg, #1d1c20 49.68%, #69292d 67.73%, #ed3b44 100%);
+    width: 1440px;
+    height: 960px;
+    background: url(../img/covers/ellipse@2x.png);  
     position: relative;
     overflow: hidden;
 }
 .content {
-    padding: 22px;
+    padding: 20px;
   }
   
   .marquee {
+    padding: 20px;
     position: absolute;
-    right: -800px;
-    left: 0;
+    right: -880px;
+    left: 0x;
     overflow: hidden;
   }
   
@@ -46,7 +47,7 @@ pointer-events: none;
     width: calc(100% / 5);
     white-space: nowrap;
     animation-name: marqueeImage; 
-    animation-duration: 5s;
+    animation-duration: 6s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
   }
@@ -59,46 +60,3 @@ pointer-events: none;
       transform: translateX(-180%);
     }
   }
-/* .covers-container {
-
-    padding-left: 28px;
-    padding-right: 28px;
-  
-    overflow: hidden;
-    position: absolute;
-    top: -200px;
-    right: -500px;
-}
-
-.cover-list {
-    display: flex;
-    flex-wrap: wrap;
-    row-gap: 40px;
-    column-gap: 40px;
-    transform: skewY(26deg);
-
-}
-      
-.cover-list li {
-    flex:  calc((100% - 80px) / 3);
-}
-
-.cover-list img {
-    width: cover;
- 
-    display: block;
-    transform: skewX(1deg);
-    
-    max-height: 314px;
-
-} */
-
- 
-    /* position: absolute;
-    -webkit-transform: skewY(11deg);
-   -moz-transform: skewY(11deg);
-   -ms-transform: skewY(11deg);
-   -o-transform: skewY(11deg);
-   transform: skewY(11deg); */
-
-
