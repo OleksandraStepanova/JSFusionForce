@@ -28,6 +28,11 @@
   --main-text: #fafafa;
 }
 
+.section-indent {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
 .container {
   display: flex;
   align-items: center;
@@ -53,6 +58,10 @@
 @media (min-width: 1440px) {
   .container {
     max-width: 1440px;
+  }
+  .section-indent {
+    padding-top: 48px;
+    padding-bottom: 48px;
   }
 }
 
