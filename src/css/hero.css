@@ -2,7 +2,7 @@
   padding-top: 281px;
   padding-bottom: 32px;
   background-color: #1c1d20;
-  background-image: url('../img/background/red-hero.png');
+  background-image: url('./img/background/red-hero.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 35% center;
@@ -10,7 +10,7 @@
 }
 @media (min-resolution: 256dpi) {
   .hero {
-    background-image: url('../img/background/red-hero@2x.png');
+    background-image: url('./img/background/red-hero@2x.png');
   }
 }
 .hero-title-dv {
