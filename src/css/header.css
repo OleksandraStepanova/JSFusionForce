@@ -1,31 +1,33 @@
 header {
-  display: flex;
-  justify-content: space-between; 
-  align-items: center;
   position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
-  background-color:transparent;
-  z-index: 1000;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: transparent;
+  z-index: 1000
 }
 
-.container {
+.header-container {
   display: flex;
-  align-items: center; 
+  justify-content: space-around;
+  align-items: center;
 }
-.nav-header {
-  display: inline-flex;
-justify-content: center;
-}
+
 .logo-header-img {
-  display: flex;
-  align-items: center; 
+  width: 80px;
+  height: 80px;
+}
+.logo-svg {
+  margin: 0px 8px;
 }
 
+.nav-header {
+  display: flex;
+  align-items: center;
+}
 .menu-toggle {
   display: flex;
-  align-items: center; 
+  text-align: center;
 }
 .menu-nav {
   display: none;
