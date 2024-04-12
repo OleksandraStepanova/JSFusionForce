@@ -1,18 +1,16 @@
 header {
   position: absolute;
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  left: 0;
+  right: 0;
   background-color: transparent;
   z-index: 1000;
 }
-
 .header-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
-
 .logo-header-img {
   width: 80px;
   height: 80px;
@@ -20,7 +18,6 @@ header {
 .logo-svg {
   margin: 0px 8px;
 }
-
 .nav-header {
   display: flex;
   align-items: center;
@@ -28,7 +25,43 @@ header {
 .menu-toggle {
   display: flex;
   text-align: center;
+  
 }
 .menu-nav {
   display: none;
+}
+.menu-btn {
+  border-color: transparent;
+  position: static;
+  width: 40px;
+  height: 19px;
+  background-color: transparent;
+  border-radius: none;
+  text-decoration: underline;
+  color: rgb(250, 250, 250);
+  font-family: Inter Tight;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: -2%;
+  text-align: left;
+}
+@media (min-width: 768px) {
+  .logo-header-img {
+    margin-right: 151px;
+  }
+  .header-container {
+    min-width: 768px;
+  }
+}
+@media (min-width: 1440px) {
+  .logo-header-img {
+    margin-right: 487px;
+  }
+  .menu-btn {
+    margin-right: 487px;
+  }
+  .header-container {
+    min-width: 1440px;
+  }
 }
