@@ -1,28 +1,29 @@
 .about-me-container {
-  align-items: start;
+  align-items: center;
 }
 .about-me-wrap {
   display: flex;
+  flex-direction: column;
   gap: 16px;
-  margin-bottom: 96px;
+  margin-bottom: 32px;
 }
 .about-me-wrap-text {
   border-radius: 24px;
-  width: 680px;
-  height: 700px;
+  max-width: 343px;
+  height: 500px;
   background: #242527;
-  padding-top: 64px;
-  padding-left: 64px;
-  padding-right: 64px;
+  padding-top: 32px;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 .about-me-text {
   font-weight: 500;
-  font-size: 38px;
+  font-size: 24px;
   line-height: 1.1;
   letter-spacing: -0.03em;
   text-transform: uppercase;
   color: #fafafa;
-  width: 552px;
+  max-width: 279px;
 }
 .accent-functional {
   color: #ed3b44;
@@ -31,14 +32,15 @@
   color: rgba(250, 250, 250, 0.4);
 }
 .about-me-list {
-  margin-bottom: 96px;
+  margin-bottom: 32px;
 }
 .about-me-item {
-  margin-bottom: 32px;
+  margin-bottom: 20px;
 }
 .about-me-wrap-title-line {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 12px;
 }
 .about-me-item-title {
   font-weight: 600;
@@ -54,8 +56,8 @@
   justify-content: center;
   border: 1px solid rgba(250, 250, 250, 0.2);
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  width: 36px;
+  height: 36px;
 }
 .about-me-icon {
   fill: transparent;
@@ -65,8 +67,7 @@
   transform: rotate(180deg);
 }
 .about-me-item-wrap-text {
-  width: 612px;
-  margin-left: 696px;
+  max-width: 343px;
 }
 .about-me-item-text {
   font-family: 'Inter Tight', sans-serif;
@@ -80,7 +81,7 @@
 .about-me-item::after {
   content: '';
   display: block;
-  width: 1376px;
+  max-width: 343px;
   height: 1px;
   background-color: rgba(250, 250, 250, 0.2);
   margin-top: 32px;
@@ -95,8 +96,8 @@
   justify-content: center;
   border: 1px solid rgba(250, 250, 250, 0.2);
   border-radius: 50%;
-  width: 200px;
-  height: 200px;
+  width: 130px;
+  height: 130px;
 }
 .skills-item-wrap-activ {
   background-color: #ed3b44;
@@ -104,12 +105,12 @@
 .skills-item {
   font-family: 'Inter Tight', sans-serif;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 16px;
   letter-spacing: -0.02em;
   color: #fafafa;
 }
 .about-me-icon-skills-wrap {
-  margin-left: 72px;
+  margin-left: auto;
   margin-top: auto;
   margin-bottom: auto;
 }
@@ -117,4 +118,74 @@
   fill: transparent;
   stroke: #fafafa;
   transform: rotate(90deg);
+}
+@media (min-width: 768px) {
+  .about-me-wrap-text {
+    max-width: 704px;
+    height: 700px;
+    padding-top: 64px;
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+  .about-me-text {
+    font-size: 38px;
+    max-width: 576px;
+  }
+  .about-me-wrap {
+    margin-bottom: 64px;
+  }
+  .about-me-list {
+    margin-bottom: 64px;
+  }
+  .about-me-item {
+    margin-bottom: 32px;
+  }
+  .about-me-wrap-icon {
+    width: 40px;
+    height: 40px;
+  }
+  .about-me-item-wrap-text {
+    max-width: 704px;
+  }
+  .about-me-item-text {
+    margin-bottom: 16px;
+  }
+  .about-me-item::after {
+    max-width: 704px;
+  }
+  .skills-item-wrap {
+    width: 200px;
+    height: 200px;
+  }
+  .skills-item {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .about-me-container {
+    align-items: start;
+  }
+  .about-me-wrap {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 96px;
+  }
+  .about-me-wrap-text {
+    max-width: 680px;
+  }
+  .about-me-text {
+    max-width: 552px;
+  }
+  .about-me-list {
+    margin-bottom: 96px;
+  }
+
+  .about-me-item-wrap-text {
+    max-width: 612px;
+    margin-left: 696px;
+  }
+  .about-me-item::after {
+    max-width: 1376px;
+  }
 }
