@@ -1,0 +1,120 @@
+.about-me-container {
+  align-items: start;
+}
+.about-me-wrap {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 96px;
+}
+.about-me-wrap-text {
+  border-radius: 24px;
+  width: 680px;
+  height: 700px;
+  background: #242527;
+  padding-top: 64px;
+  padding-left: 64px;
+  padding-right: 64px;
+}
+.about-me-text {
+  font-weight: 500;
+  font-size: 38px;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #fafafa;
+  width: 552px;
+}
+.accent-functional {
+  color: #ed3b44;
+}
+.accent-websites {
+  color: rgba(250, 250, 250, 0.4);
+}
+.about-me-list {
+  margin-bottom: 96px;
+}
+.about-me-item {
+  margin-bottom: 32px;
+}
+.about-me-wrap-title-line {
+  display: flex;
+  justify-content: space-between;
+}
+.about-me-item-title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: rgba(250, 250, 250, 0.4);
+}
+.about-me-wrap-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+.about-me-icon {
+  fill: transparent;
+  stroke: #fafafa;
+}
+.about-me-icon-open {
+  transform: rotate(180deg);
+}
+.about-me-item-wrap-text {
+  width: 612px;
+  margin-left: 696px;
+}
+.about-me-item-text {
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+  margin-bottom: 32px;
+}
+.about-me-item::after {
+  content: '';
+  display: block;
+  width: 1376px;
+  height: 1px;
+  background-color: rgba(250, 250, 250, 0.2);
+  margin-top: 32px;
+}
+.skills-list {
+  display: flex;
+  justify-content: center;
+}
+.skills-item-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+.skills-item-wrap-activ {
+  background-color: #ed3b44;
+}
+.skills-item {
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+}
+.about-me-icon-skills-wrap {
+  margin-left: 72px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.about-me-icon-skills {
+  fill: transparent;
+  stroke: #fafafa;
+  transform: rotate(90deg);
+}
