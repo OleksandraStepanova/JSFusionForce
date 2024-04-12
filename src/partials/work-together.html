@@ -1,4 +1,4 @@
-<section class="work-together" id="work-together">
+<section class="work-together section-indent" id="work-together">
     <div class="container">
         <h2 class="visually-hidden">Let's work together</h2>
         <div class="title-box">
@@ -24,9 +24,8 @@
             placeholder="clients@gmail.com"
             autocomplete="off"
             required
+            pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
           />
-          <p class="succes-msg">Succes!</p>
-          <p class="error-msg">Invalid email, try again!</p>
           <input
             type="text"
             name="comment"
@@ -45,14 +44,14 @@
           <a href="tel:+3801111111111" class="link-tel">+380 111 111 11 11</a>
         </div>
       </div>
-      <div class="modal-overlay">
-            <div class="modal-window">
+      <div class="modal-overlay inactive">
+            <div class="modal-window inactive">
                 <button type="button" class="modal-btn-close">
                     <svg class="modal-btn-close-icon" >
                         <use href="../img/icons.svg#icon-close"></use>
                     </svg>
                 </button>
-                <p class="modal-title">Thank you for your interest in cooperation!</p>
+                <h3 class="modal-title">Thank you for your interest in cooperation!</h3>
                 <p class="modal-text">The manager will contact you shortly to discuss further details and opportunities for cooperation. Please stay in touch.</p>
             </div>
         </div>
