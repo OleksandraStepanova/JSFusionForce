@@ -32,16 +32,3 @@ header {
 .menu-nav {
   display: none;
 }
-.order-button {
-  text-decoration: none;
-  color: #000;
-  border: 1px solid #000;
-  padding: 10px 20px;
-  border-radius: 5px;
-  transition: background-color 0.3s, color 0.3s;
-}
-
-.order-button:hover {
-  background-color: #000;
-  color: #fff;
-}
