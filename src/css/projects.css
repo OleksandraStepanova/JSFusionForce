@@ -1,10 +1,18 @@
 /* ================= project-list ==================== */
 
+.swiper-projects,
+.swiper-conteiner,
+.projects-list,
+.swiper-slide {
+  min-width: 0;
+}
+
 .projects-list-item {
   max-width: 343px;
   display: flex;
   flex-direction: column;
   margin-bottom: 32px;
+  min-width: 0;
 }
 
 .list-item-info {
