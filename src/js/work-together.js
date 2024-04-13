@@ -1,9 +1,19 @@
-// -----------------inputs validation
+import {postRequest} from './api';
+
+const form = document.querySelector('.form');
 const emailInput = document.getElementById('email');
 const commentInput = document.getElementById('comment');
-const maxLength = 50; 
+const submitButton = document.querySelector('.submit-btn');
+const overlay = document.querySelector('.modal-overlay');
+const modal = document.querySelector('.modal-window');
+const closeButton = document.querySelector('.modal-btn-close');
+
+
+// -----------------inputs validation
+
 
 commentInput.addEventListener('input', () => {
+    const maxLength = 50; 
     const inputValue = commentInput.value;
     if (inputValue.length > maxLength) {
         commentInput.value = inputValue.substring(0, maxLength) + '...';
@@ -26,29 +36,39 @@ emailInput.addEventListener('input', function() {
 });
 
 // -----------------------modal
-const form = document.querySelector('.form');
-const submitButton = document.querySelector('.submit-btn');
-const overlay = document.querySelector('.modal-overlay');
-const modal = document.querySelector('.modal-window');
-const closeButton = document.querySelector('.modal-btn-close');
 
-form.addEventListener('submit', (e) => {
-   
-    e.preventDefault();
-    
-    overlay.classList.remove('inactive');
-    modal.classList.remove('inactive');
-    overlay.classList.add('active');
-    modal.classList.add('active');
-});
+
+form.addEventListener('submit', onBtnSubmit);
+
+
+async function onBtnSubmit(e) {
+    e.preventDefault(); 
+    const data = {
+        email: emailInput.value,
+        comment: commentInput.value
+    };
+    try {
+        const response = await postRequest(data);
+
+        if (response.title !== " ") {
+            overlay.style.opacity = 1;
+            overlay.style.visibility = "visible";
+            modal.style.opacity = 1;
+            modal.style.visibility = "visible";
+            form.reset();
+        }        
+    } catch (error) {
+        throw error;
+    }
+}
 
 closeButton.addEventListener('click', onButtonClose);
 
 function onButtonClose() {
-    overlay.classList.remove('active');
-    modal.classList.remove('active');
-    overlay.classList.add('inactive');
-    modal.classList.add('inactive');
+     overlay.style.opacity = 0;
+    overlay.style.visibility = "hidden";
+    modal.style.opacity = 0;
+    modal.style.visibility = "hidden";
 }
 overlay.addEventListener('click', onButtonClose);
 window.addEventListener('keydown', (e) => {

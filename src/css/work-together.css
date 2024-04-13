@@ -115,14 +115,7 @@
 }
 
 /* -----------------  modal ------------------ */
-.active {
-  opacity: 1;
-  visibility: visible;
-}
-.inactive {
-  opacity: 0;
-  visibility: hidden;
-}
+
 .modal-overlay {
   opacity: 0;
   visibility: hidden;
@@ -139,6 +132,7 @@
 .modal-window {
   opacity: 0;
   visibility: hidden;
+
   border: 1px solid rgba(250, 250, 250, 0.1);
   border-radius: 20px;
   position: fixed;
