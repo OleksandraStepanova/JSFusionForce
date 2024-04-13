@@ -86,12 +86,12 @@
 
 @media (min-width: 768px) {
   .hero {
-    background-image: url('../img/background/hero-mobile.png');
+    background-image: url('../img/background/red-hero.png');
     background-position: 45% center;
   }
   @media (min-resolution: 192dpi) {
     .hero {
-      background-image: url('../img/background/hero-mobile@2x.png');
+      background-image: url('../img/background/red-hero@2x.png');
     }
   }
   .add-container {
