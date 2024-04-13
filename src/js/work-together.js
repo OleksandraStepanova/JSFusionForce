@@ -11,16 +11,6 @@ const closeButton = document.querySelector('.modal-btn-close');
 
 // -----------------inputs validation
 
-
-commentInput.addEventListener('input', () => {
-    const maxLength = 50; 
-    const inputValue = commentInput.value;
-    if (inputValue.length > maxLength) {
-        commentInput.value = inputValue.substring(0, maxLength) + '...';
-    }
-});
-
-
 emailInput.addEventListener('input', function() {
     const emailValue = this.value;
     const emailPattern = /^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
@@ -49,7 +39,6 @@ async function onBtnSubmit(e) {
     };
     try {
         const response = await postRequest(data);
-
         if (response.title !== " ") {
             overlay.style.opacity = 1;
             overlay.style.visibility = "visible";
