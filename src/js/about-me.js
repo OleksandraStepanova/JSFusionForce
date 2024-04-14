@@ -8,7 +8,7 @@ Swiper.use([Navigation, Keyboard, Mousewheel, Pagination]);
 import 'swiper/css';
 
 export const aboutMeSwiper = new Swiper('.swiper-about-me', {
-    slidesPerView: 6,
+    slidesPerView: 'auto',
     breakpoints:{
         375: {
             slidesPerView: 1,
@@ -39,10 +39,8 @@ export const aboutMeSwiper = new Swiper('.swiper-about-me', {
   allowSlidePrev: false,
   on: {
         slideChange: function () {
-            let currentSlide = this.slides[this.activeIndex];
-            currentSlide.style.backgroundColor = 'transparent';
-            let currentNextSlide = this.slides[this.activeIndex + 1];
-            currentNextSlide.style.backgroundColor = '#ED3B44';
+      document.querySelector('.swiper-slide.skills-item-wrap-activ').classList.remove('skills-item-wrap-activ');
+      this.slides[this.activeIndex].classList.add('skills-item-wrap-activ')
            
         }
     }
