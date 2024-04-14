@@ -19,7 +19,8 @@ export const aboutMeSwiper = new Swiper('.swiper-about-me', {
         1440: {
             slidesPerView: 5,
         }
-    },
+  },
+    
 
   initialSlide: 0,
   loop: true,
@@ -27,7 +28,10 @@ export const aboutMeSwiper = new Swiper('.swiper-about-me', {
     delay: 5000,
   },
   grabCursor: true,
-  keyboard: true,
+    keyboard: {
+    enabled: true,
+    onlyInViewport: true,
+  },
   mousewheel: {
     invert: true,
   },

@@ -1,7 +1,7 @@
 import { getReviews } from './api';
 import Swiper from 'swiper';
-import { Navigation, Keyboard } from 'swiper/modules';
-Swiper.use([Navigation, Keyboard]);
+import { Navigation, Keyboard, Mousewheel } from 'swiper/modules';
+Swiper.use([Navigation, Keyboard, Mousewheel]);
 
 import 'swiper/css';
 
@@ -22,6 +22,7 @@ export const reviewsSwiper = new Swiper('.swiper-reviews', {
     },
   },
   loop: false,
+  mousewheel: { sensitivity: 1 },
   keyboard: {
     enabled: true,
     onlyInViewport: true,
@@ -31,20 +32,18 @@ export const reviewsSwiper = new Swiper('.swiper-reviews', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
-  lazyPreloadPrevNext: 1,
+  // lazyPreloadPrevNext: 1,
   grabCursor: true,
   on: {
     reachEnd: function () {
-      document
-        .querySelector('.swiper-button-next')
-        .classList.remove('no-active');
-      document.querySelector('.swiper-button-prev').classList.add('no-active');
+            document.querySelector('.swiper-button-prev').classList.remove('no-active');
+      document.querySelector('.swiper-button-next').classList.add('no-active');
+
     },
     reachBeginning: function () {
-      document
-        .querySelector('.swiper-button-prev')
-        .classList.remove('no-active');
-      document.querySelector('.swiper-button-next').classList.add('no-active');
+            document.querySelector('.swiper-button-next').classList.remove('no-active');
+      document.querySelector('.swiper-button-prev').classList.add('no-active');
+
     },
   },
   speed: 800,
