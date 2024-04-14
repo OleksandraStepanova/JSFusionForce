@@ -11,10 +11,10 @@ export const aboutMeSwiper = new Swiper('.swiper-about-me', {
     slidesPerView: 'auto',
     breakpoints:{
         375: {
-            slidesPerView: 1,
+            slidesPerView: 2,
         },
         768: {
-            slidesPerView: 2,
+            slidesPerView: 3,
         },
         1440: {
             slidesPerView: 5,
@@ -32,7 +32,7 @@ export const aboutMeSwiper = new Swiper('.swiper-about-me', {
     invert: true,
   },
   navigation: {
-  nextEl: '.btn-next',
+    nextEl: '.btn-next',
   },
   navigationPosition: 'right',
   effect: 'fade',
