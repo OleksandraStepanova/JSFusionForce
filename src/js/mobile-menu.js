@@ -13,7 +13,16 @@ function openMenu() {
   return 0;
 }
 
-mobileBtn.addEventListener('click', openMenu);
-closeBtn.addEventListener('click', () => {
+function closeMenu() {
   burgerMenu.style.right = '-100%';
+}
+
+const menuLinks = document.querySelectorAll('.mobile-menu-part');
+menuLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    closeMenu();
+  });
 });
+
+mobileBtn.addEventListener('click', openMenu);
+closeBtn.addEventListener('click', closeMenu);
