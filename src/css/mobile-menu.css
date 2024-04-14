@@ -45,12 +45,6 @@
     fill: transparent;
   }
 
-  /*--nav*/
-  /* .modal-menu-navigation {
-    display: flex;
-    height: 100%;
-  } */
-
   .modal-menu-list {
     display: flex;
     flex-direction: column;
@@ -61,7 +55,6 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 12px;
   }
 
   .modal-menu-link {
@@ -86,7 +79,6 @@
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  gap: 10px;
   border-radius: 60px;
   padding: 14px 31px;
   width: 164px;
