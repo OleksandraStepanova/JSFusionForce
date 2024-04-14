@@ -87,7 +87,7 @@
 @media (min-width: 768px) {
   .hero {
     background-image: url('../img/background/red-hero.png');
-    background-position: 45% center;
+    background-position: 50% center;
   }
   @media (min-resolution: 192dpi) {
     .hero {
@@ -103,12 +103,12 @@
 }
 @media (min-width: 1440px) {
   .hero {
-    background-image: url('../img/background/red-hero.png');
+    background-image: url('../img/background/red-hero-pc.png');
     background-position: 50% center;
   }
   @media (min-resolution: 192dpi) {
     .hero {
-      background-image: url('../img/background/red-hero@2x.png');
+      background-image: url('../img/background/red-hero-pc@2x.png');
     }
   }
   .add-container {
@@ -117,7 +117,9 @@
   .hero-link-dv {
     margin-left: auto;
   }
-  .hero-title-dv {
+  .title-hero {
+    width: 1084px;
+    height: 270px;
     align-items: center;
     width: 1084px;
     height: 270px;
@@ -128,5 +130,19 @@
     letter-spacing: -0.03em;
     text-transform: uppercase;
     color: #fafafa;
+  }
+  .hero-link {
+    border-radius: 60px;
+    padding: 18px 16px;
+    width: 55px;
+    height: 55px;
+    font-size: 16px;
+  }
+  .hero-link-email {
+    border-radius: 60px;
+    padding: 18px 24px;
+    width: 223px;
+    height: 55px;
+    font-size: 16px;
   }
 }
