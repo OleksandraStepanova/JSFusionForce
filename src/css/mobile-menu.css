@@ -101,5 +101,6 @@
   margin-right: auto;
 }
 
-.order-button-mb {
+.modal-menu-navigation li:last-child {
+  margin-top: 290px;
 }
