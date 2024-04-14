@@ -18,7 +18,7 @@
     flex-direction: column;
     justify-content: space-between;
     overflow: hidden;
-    bottom: -40px;
+    bottom: -60px;
   }
 
   .is-open {
