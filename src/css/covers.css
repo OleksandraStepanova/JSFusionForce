@@ -1,23 +1,8 @@
-/* .visually-hidden{
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        margin: -1px;
-        border: 0;
-        padding: 0;
-        
-        white-space: nowrap;
-        clip-path: inset(100%);
-        clip: rect(0 0 0 0);
-        overflow: hidden;
-        outline: 0;
-outline-offset: 0;
-pointer-events: none;
-} */
+
 .covers{
-    width: 1440px;
+    width: 100%;
     height: 960px;
-    background: url(../img/covers/ellipse@2x.png);  
+    background: url(../img/covers/elements_vectors.png);  
     position: relative;
     overflow: hidden;
 }
@@ -29,7 +14,7 @@ pointer-events: none;
     padding: 20px;
     position: absolute;
     right: -880px;
-    left: 0x;
+    left: 0;
     overflow: hidden;
   }
   
@@ -47,7 +32,7 @@ pointer-events: none;
     width: calc(100% / 5);
     white-space: nowrap;
     animation-name: marqueeImage; 
-    animation-duration: 6s;
+    animation-duration: 10s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
   }
@@ -59,4 +44,7 @@ pointer-events: none;
     to {
       transform: translateX(-180%);
     }
+  }
+  .running {
+    animation-play-state: running;
   }

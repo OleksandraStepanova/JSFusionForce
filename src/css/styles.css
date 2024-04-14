@@ -8,6 +8,7 @@
 @import url('./covers.css');
 @import url('./reviews.css');
 @import url('./work-together.css');
+@import url('./mobile-menu.css');
 
 :root {
   font-family: 'Inter Tight', sans-serif;
@@ -26,6 +27,11 @@
   --arrow: #3b3b3b;
   --button-text: #ed3b44;
   --main-text: #fafafa;
+}
+
+.section-indent {
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .container {
@@ -54,6 +60,10 @@
   .container {
     max-width: 1440px;
   }
+  .section-indent {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
 }
 
 .visually-hidden {
@@ -67,4 +77,8 @@
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
 }
