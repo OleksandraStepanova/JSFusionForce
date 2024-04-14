@@ -24,5 +24,7 @@ menuLinks.forEach(link => {
   });
 });
 
+
 mobileBtn.addEventListener('click', openMenu);
 closeBtn.addEventListener('click', closeMenu);
+

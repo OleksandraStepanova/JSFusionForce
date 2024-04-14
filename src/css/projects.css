@@ -51,6 +51,11 @@
   width: 141px;
   height: 45px;
   margin-bottom: 32px;
+  cursor: pointer;
+}
+
+.link-wrap:hover {
+  background-color: #e0373f;
 }
 
 .project-link {
@@ -115,6 +120,7 @@
   .projects-list {
     max-width: 704px;
   }
+
   .projects-list-item {
     max-width: 704px;
     margin-bottom: 64px;
@@ -162,9 +168,14 @@
   .projects-list {
     max-width: 1376px;
   }
+
   .projects-list-item {
     flex-direction: row;
     max-width: 1376px;
+  }
+
+  .list-item-info {
+    border-radius: 24px 0 0 24px;
   }
 
   .projects-technologies-list {
@@ -181,5 +192,6 @@
 
   .projects-img-wrap {
     min-width: 688px;
+    border-radius: 0 24px 24px 0;
   }
 }
