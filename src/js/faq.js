@@ -1,5 +1,5 @@
-import Accordion from 'accordion-js';
-import 'accordion-js/dist/accordion.min.css';
+// import Accordion from 'accordion-js';
+// import 'accordion-js/dist/accordion.min.css';
 document.addEventListener('DOMContentLoaded', function () {
   const accordionButtons = document.querySelectorAll('.accordion-button');
 
