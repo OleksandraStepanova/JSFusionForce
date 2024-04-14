@@ -167,6 +167,10 @@
     max-width: 1376px;
   }
 
+  .list-item-info {
+    border-radius: 24px 0 0 24px;
+  }
+
   .projects-technologies-list {
     margin-bottom: 223px;
   }
@@ -181,5 +185,6 @@
 
   .projects-img-wrap {
     min-width: 688px;
+    border-radius: 0 24px 24px 0;
   }
 }
