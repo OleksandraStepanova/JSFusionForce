@@ -1,4 +1,7 @@
 /* ================= project-list ==================== */
+.projects-list {
+  max-width: 343px;
+}
 
 .projects-list-item {
   max-width: 343px;
@@ -102,12 +105,16 @@
   cursor: default;
 }
 
-.btn .no-active {
-  stroke: #3b3b3b;
+.no-active {
+  pointer-events: none;
+  opacity: 0.5;
 }
 
 /* ================= tablet ==================== */
 @media (min-width: 768px) {
+  .projects-list {
+    max-width: 704px;
+  }
   .projects-list-item {
     max-width: 704px;
     margin-bottom: 64px;
@@ -152,13 +159,12 @@
 
 /* ================= desktop ==================== */
 @media (min-width: 1440px) {
+  .projects-list {
+    max-width: 1376px;
+  }
   .projects-list-item {
     flex-direction: row;
     max-width: 1376px;
-  }
-
-  .list-item-info {
-    border-radius: 24px 0 0 24px;
   }
 
   .projects-technologies-list {
@@ -174,7 +180,6 @@
   }
 
   .projects-img-wrap {
-    border-radius: 0 24px 24px 0;
     min-width: 688px;
   }
 }
