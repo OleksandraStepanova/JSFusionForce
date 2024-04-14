@@ -11,9 +11,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600&display=swap" rel="stylesheet">
     
     <script type="module" crossorigin src="/JSFusionForce/commonHelpers.js"></script>
-    <link rel="modulepreload" crossorigin href="/JSFusionForce/assets/vendor-fda9f77c.js">
-    <link rel="stylesheet" href="/JSFusionForce/assets/vendor-7c8ef494.css">
-    <link rel="stylesheet" href="/JSFusionForce/assets/index-c421ce50.css">
+    <link rel="modulepreload" crossorigin href="/JSFusionForce/assets/vendor-c97bddb3.js">
+    <link rel="stylesheet" href="/JSFusionForce/assets/vendor-9842083d.css">
+    <link rel="stylesheet" href="/JSFusionForce/assets/index-5a254ef8.css">
   </head>
   <body>
     <header class="header section-indent">
@@ -716,42 +716,37 @@
   <div class="container">
     <div class="container-reviews">
       <h2 class="title-section">Reviews</h2>
-      <ul class="reviews-list" id="results-reviews">
-        <li class="reviews-list-item">
-          <a class="reviews-image" href="https://picsum.photos/200/300">
-            <img src="https://picsum.photos/200/300" alt="" class="photo-img" />
-          </a>
-          <h3 class="reviews-title-name">Name</h3>
-          <p class="reviews-text">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Accusantium distinctio sunt ipsa sequi libero atque magnam, est
-            labore ipsam quaerat dicta, corporis veniam minima id. Facere harum
-            dolore quaerat obcaecati.
-          </p>
-        </li>
-      </ul>
-      <div class="reviews-btn swiper">
-        <button type="button" class="btn is-enabled">
-          <svg
-            class="arrow-reviews-icon left no-active"
-            width="24"
-            height="24"
-            aria-label="arrow icon"
-          >
-            <use href="/JSFusionForce/assets/icons-ab806b30.svg#icon-arrow"></use>
-          </svg>
-        </button>
-        <button type="button" class="btn">
-          <svg
-            class="arrow-reviews-icon"
-            width="24"
-            height="24"
-            aria-label="arrow icon"
-          >
-            <use href="/JSFusionForce/assets/icons-ab806b30.svg#icon-arrow"></use>
-          </svg>
-        </button>
+      <div class="swiper-container">
+        <div class="container">
+          <div class="swiper swiper-reviews">
+            <ul class="reviews-list swiper-wrapper" id="results-reviews"></ul>
+            <div class="reviews-btn">
+              <button type="button" class="btn is-enabled swiper-button-prev">
+                <svg
+                  class="arrow-reviews-icon left no-active"
+                  width="24"
+                  height="24"
+                  aria-label="arrow icon"
+                >
+                  <use href="/JSFusionForce/assets/icons-ab806b30.svg#icon-arrow"></use>
+                </svg>
+              </button>
+              <button type="button" class="btn swiper-button-next">
+                <svg
+                  class="arrow-reviews-icon"
+                  width="24"
+                  height="24"
+                  aria-label="arrow icon"
+                >
+                  <use href="/JSFusionForce/assets/icons-ab806b30.svg#icon-arrow"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
+
+      <div class="swiper-scrollbar"></div>
     </div>
   </div>
 </section>
