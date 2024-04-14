@@ -75,7 +75,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .modal-window {
+  .modal-window-mb {
     display: none;
   }
 }
