@@ -18,8 +18,8 @@ function closeMenu() {
 }
 
 const menuLinks = document.querySelectorAll('.mobile-menu-part');
-menuLinks.forEach(link => {
-  link.addEventListener('click', () => {
+menuLinks.forEach(links => {
+  links.addEventListener('click', () => {
     closeMenu();
   });
 });
