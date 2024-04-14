@@ -112,7 +112,7 @@
 @media screen and (min-width: 1440px) {
   .benefits-cont {
     flex-direction: row;
-    gap: 412px;
+    gap: 454px;
   }
   .benefits-list {
     justify-content: flex-start;
