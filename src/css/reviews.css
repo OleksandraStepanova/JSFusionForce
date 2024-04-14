@@ -46,14 +46,17 @@
 .reviews-list {
   display: flex;
   flex-direction: row;
-  gap: 16px;
 }
 .reviews-list-item {
-  width: 343px;
-  display: flex;
+  max-width: 343px;
+  min-height: 302px;
+  max-height: 302px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  /* display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: flex-start; */
   padding: 32px 24px;
   margin: 0px 0px 32px 0px;
   box-sizing: border-box;
@@ -124,7 +127,7 @@
 
 @media screen and (min-width: 1140px) {
   .reviews-list-item {
-    width: 332px;
+    max-width: 332px;
   }
 }
 
