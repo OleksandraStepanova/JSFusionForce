@@ -20,12 +20,17 @@ document.addEventListener('DOMContentLoaded', function () {
       } else {
         useElement.setAttribute('href', './img/icons.svg#icon-less');
       }
-
       if (accordionContent.classList.contains('active')) {
         accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
       } else {
         accordionContent.style.maxHeight = null;
       }
+      const allAccordionItems = document.querySelectorAll('.faq-element');
+      allAccordionItems.forEach(item => {
+        if (item !== accordionItem) {
+          item.style.height = null;
+        }
+      });
     });
   });
 });

@@ -1,5 +1,55 @@
 import { getReviews } from './api';
-import { reviewsSwiper } from './slider';
+import Swiper from 'swiper';
+import { Navigation, Keyboard } from 'swiper/modules';
+Swiper.use([Navigation, Keyboard]);
+
+import 'swiper/css';
+
+//=====================Slider======================//
+
+export const reviewsSwiper = new Swiper('.swiper-reviews', {
+  slidesPerView: 'auto',
+
+  breakpoints: {
+    375: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    1440: {
+      slidesPerView: 4,
+    },
+  },
+  loop: false,
+  keyboard: {
+    enabled: true,
+    onlyInViewport: true,
+  },
+  spaceBetween: 16,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  lazyPreloadPrevNext: 1,
+  grabCursor: true,
+  on: {
+    reachEnd: function () {
+      document
+        .querySelector('.swiper-button-next')
+        .classList.remove('no-active');
+      document.querySelector('.swiper-button-prev').classList.add('no-active');
+    },
+    reachBeginning: function () {
+      document
+        .querySelector('.swiper-button-prev')
+        .classList.remove('no-active');
+      document.querySelector('.swiper-button-next').classList.add('no-active');
+    },
+  },
+  speed: 800,
+});
+//=====================/Slider======================//
 
 //=====================Render======================//
 
@@ -31,13 +81,3 @@ async function createReview() {
     console.log(error);
   }
 }
-
-//====================/Render======================//
-
-//======================CONST======================//
-
-//=====================/CONST======================//
-
-//====================Functions======================//
-
-//===================/Functions======================//
