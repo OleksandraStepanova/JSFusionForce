@@ -8,6 +8,7 @@
 @import url('./covers.css');
 @import url('./reviews.css');
 @import url('./work-together.css');
+@import url('./mobile-menu.css');
 
 :root {
   font-family: 'Inter Tight', sans-serif;
