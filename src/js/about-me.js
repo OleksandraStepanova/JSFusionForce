@@ -5,7 +5,7 @@ import Swiper from 'swiper';
 import { Navigation, Keyboard, Mousewheel, Pagination } from 'swiper/modules';
 Swiper.use([Navigation, Keyboard, Mousewheel, Pagination]);
 
-import 'swiper/css/bundle';
+import 'swiper/css';
 
 export const aboutMeSwiper = new Swiper('.swiper-about-me', {
     slidesPerView: 6,
@@ -32,8 +32,9 @@ export const aboutMeSwiper = new Swiper('.swiper-about-me', {
     invert: true,
   },
   navigation: {
-  nextEl: '.swiper-button-next',
+  nextEl: '.btn-next',
   },
+  navigationPosition: 'right',
   effect: 'fade',
   allowSlidePrev: false,
   on: {

@@ -118,6 +118,8 @@
 }
 .about-me-icon-skills-wrap {
   display: inline;
+  background-color: transparent;
+  border: none;
 }
 .about-me-icon-skills {
   fill: transparent;
