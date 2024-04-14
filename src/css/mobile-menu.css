@@ -13,7 +13,7 @@
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-    padding: 302px 20px 64px;
+    padding: 302px 20px 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
