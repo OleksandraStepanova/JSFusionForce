@@ -16,9 +16,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
       const useElement = button.querySelector('.accordion-button-icon use');
       if (accordionContent.classList.contains('active')) {
-        useElement.setAttribute('href', './img/icons.svg#icon-less');
-      } else {
         useElement.setAttribute('href', './img/icons.svg#icon-more');
+      } else {
+        useElement.setAttribute('href', './img/icons.svg#icon-less');
       }
 
       if (accordionContent.classList.contains('active')) {
