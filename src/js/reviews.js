@@ -73,7 +73,7 @@ const reviews = document.querySelector('.reviews-list');
 async function createReview() {
   try {
     const data = await getReviews();
-    console.log(data);
+  
     const markup = reviewsTemplate(data);
     reviews.innerHTML = markup;
   } catch (error) {
