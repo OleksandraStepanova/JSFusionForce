@@ -61,7 +61,6 @@
   padding: 0px;
 }
 
-
 .accordion-button {
   border: 1px solid rgba(250, 250, 250, 0.2);
   position: absolute;
@@ -79,14 +78,6 @@
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s ease;
-}
-
-.accordion-button-icon.active use[href="./img/icons.svg#icon-more"] {
-  display: none;
-}
-
-.accordion-button-icon.active use[href="./img/icons.svg#icon-less"] {
-  display: inline-block;
 }
 
 .accordion-button-icon {
