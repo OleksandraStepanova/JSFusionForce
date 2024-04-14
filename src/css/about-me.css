@@ -104,6 +104,9 @@
 .skills-wrapper {
   display: flex;
 }
+.about-me-container-container {
+  max-width: 260px;
+}
 
 /* .skills-item-wrap-activ {
   background-color: #ed3b44;
@@ -160,7 +163,7 @@
     max-width: 704px;
   }
   .skills-item-wrap {
-    min-width: 200px;
+    max-width: 200px;
     min-height: 200px;
     padding-top: 90px;
     padding-bottom: 90px;
@@ -171,9 +174,15 @@
   .skills-list {
     max-width: 600px;
   }
+  .about-me-container-container {
+    max-width: 600px;
+  }
 }
 
 @media (min-width: 1440px) {
+  .skills-item-wrap {
+    max-width: 200px;
+  }
   .about-me-container {
     align-items: start;
   }
@@ -200,6 +209,9 @@
     max-width: 1376px;
   }
   .skills-list {
+    max-width: 1200px;
+  }
+  .about-me-container-container {
     max-width: 1200px;
   }
 }

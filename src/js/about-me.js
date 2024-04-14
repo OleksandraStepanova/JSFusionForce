@@ -11,10 +11,10 @@ export const aboutMeSwiper = new Swiper('.swiper-about-me', {
     slidesPerView: 6,
     breakpoints:{
         375: {
-            slidesPerView: 5,
+            slidesPerView: 1,
         },
         768: {
-            slidesPerView: 5,
+            slidesPerView: 2,
         },
         1440: {
             slidesPerView: 5,
