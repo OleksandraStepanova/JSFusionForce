@@ -62,14 +62,14 @@ header {
   width: 60px;
   height: 39px;
   background-color: transparent;
-  border-radius: none;
+  border: none;
   text-decoration: underline;
   color: rgb(250, 250, 250);
   font-family: Inter Tight;
   font-size: 16px;
   font-weight: 500;
   line-height: 19px;
-  letter-spacing: -2%;
+  letter-spacing: -0.02em;
   margin-bottom: 10px;
 }
 .mobile-button-menu {
