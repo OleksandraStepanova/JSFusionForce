@@ -58,6 +58,7 @@
   border-radius: 50%;
   width: 36px;
   height: 36px;
+  background-color: transparent;
 }
 .about-me-icon {
   fill: transparent;
@@ -77,6 +78,11 @@
   letter-spacing: -0.02em;
   color: #fafafa;
   margin-bottom: 32px;
+}
+.ac .ac-panel {
+  overflow: hidden;
+  transition-property: height, visibility;
+  transition-timing-function: ease;
 }
 .about-me-item::after {
   content: '';

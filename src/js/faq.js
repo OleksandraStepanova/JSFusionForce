@@ -1,5 +1,5 @@
 import Accordion from 'accordion-js';
-import 'accordion-js/dist/accordion.min.css';
+// import 'accordion-js/dist/accordion.min.css';
 document.addEventListener('DOMContentLoaded', function () {
   const accordionButtons = document.querySelectorAll('.accordion-button');
 
@@ -16,9 +16,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
       const useElement = button.querySelector('.accordion-button-icon use');
       if (accordionContent.classList.contains('active')) {
-        useElement.setAttribute('href', "./img/icons.svg#icon-more");
+        useElement.setAttribute('href', './img/icons.svg#icon-more');
       } else {
-        useElement.setAttribute('href', "./img/icons.svg#icon-less");
+        useElement.setAttribute('href', './img/icons.svg#icon-less');
       }
       if (accordionContent.classList.contains('active')) {
         accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
