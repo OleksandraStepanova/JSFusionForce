@@ -1,1 +1,60 @@
-<section class="work-together" id="work-together"></section>
+<section class="work-together" id="work-together">
+    <div class="container">
+      <div class="box">
+          <h2 class="visually-hidden">Let's work together</h2>
+          <div class="title-box">
+            <div class="upper-part">
+              <picture class="title-picture">
+                  <source srcset="./img/desktop/work-together-desktop.png 1x, ./img/desktop/work-together-desktop@2x.png 2x" media="(min-width: 1440px)">
+                  <source srcset="./img/tablet/work-together-tablet.png 1x, ./img/tablet/work-together-tablet@2x.png 2x" media="(min-width: 768px)">
+                  <source srcset="./img/mobile/work-together.png 1x, ./img/mobile/work-together@2x.png 2x" media="(max-width: 767px)">
+                  <img src="./img/mobile/work-together.png" alt="Lloyd Jefferson" loading="lazy">
+              </picture>
+              <p class="title-upper">
+                LET'S <span class="title-accent">WORK</span>
+              </p>
+            </div>
+            <p class="title-lower">TOGETHER</p>
+          </div>
+          <form class="form">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="input-email"
+              placeholder="clients@gmail.com"
+              autocomplete="off"
+              required
+              pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+            />
+            <input
+              type="text"
+              name="comment"
+              id="comment"
+              class="input-comment"
+              placeholder="comments"
+              autocomplete="off"
+              required
+            >
+            <button id="form-btn"  aria-label="work together" type="submit" class="submit-btn">Send</button>
+          </form>
+          <div class="contact-links">
+            <a href="mailto:lloydjefferson@gmail.com" class="link-email"
+              >lloydjefferson@gmail.com</a
+            >
+            <a href="tel:+3801111111111" class="link-tel">+380 111 111 11 11</a>
+          </div>
+        </div>
+      </div>
+      <div class="modal-overlay inactive">
+            <div class="modal-window inactive">
+                <button id="close-modul"  aria-label="close modal" type="button" class="modal-btn-close">
+                    <svg class="modal-btn-close-icon" >
+                        <use href="./img/icons.svg#icon-close"></use>
+                    </svg>
+                </button>
+                <h3 class="modal-title">Thank you for your interest in cooperation!</h3>
+                <p class="modal-text">The manager will contact you shortly to discuss further details and opportunities for cooperation. Please stay in touch.</p>
+            </div>
+        </div>
+</section>
