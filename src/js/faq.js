@@ -16,9 +16,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
       const useElement = button.querySelector('.accordion-button-icon use');
       if (accordionContent.classList.contains('active')) {
-        useElement.setAttribute('href', './img/icons.svg#icon-more');
+        useElement.classList.add('icon-more');
+        useElement.classList.remove('icon-less');
+       
+        icon.classList.add('rotate-icon');
       } else {
-        useElement.setAttribute('href', './img/icons.svg#icon-less');
+        useElement.classList.add('icon-less');
+        useElement.classList.remove('icon-more');
+        icon.classList.remove('rotate-icon');
       }
       if (accordionContent.classList.contains('active')) {
         accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
