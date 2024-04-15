@@ -89,7 +89,7 @@
   display: inline-block;
   width: 20px;
   height: 20px;
-  background-image: url('./img/icons.svg');
+  background-image: url('../img/icons.svg');
   background-position: 0px 0px; /* Позиція вашої іконки в SVG-файлі */
 }
 
@@ -98,7 +98,7 @@
   display: inline-block;
   width: 20px;
   height: 20px;
-  background-image: url('./img/icons.svg');
+  background-image: url('../img/icons.svg');
   background-position: 20px 0px; /* Позиція вашої іншої іконки в SVG-файлі */
 }
 .rotate-icon {
