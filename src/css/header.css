@@ -156,7 +156,7 @@ header {
     font-size: 16px;
     font-weight: 500;
     line-height: 19px;
-    letter-spacing: -0, 02em;
+    letter-spacing: -0.02em;
     text-align: left;
   }
   .order:active,
