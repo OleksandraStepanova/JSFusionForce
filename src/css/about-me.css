@@ -131,7 +131,7 @@
   border: none;
   width: 40px;
   position: absolute;
-  top: 80px;
+  top: 50px;
   right: 10px;
 }
 
@@ -191,6 +191,9 @@
   }
   .about-me-container-container {
     max-width: 704px;
+  }
+  .about-me-icon-skills-wrap {
+    top: 80px;
   }
 }
 
