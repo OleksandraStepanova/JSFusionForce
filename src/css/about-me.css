@@ -94,7 +94,7 @@
 }
 .skills-list {
   display: flex;
-  max-width: 343px;
+  max-width: 319px;
 }
 .skills-item-wrap {
   display: flex;
@@ -187,7 +187,7 @@
     font-size: 20px;
   }
   .skills-list {
-    max-width: 704px;
+    max-width: 664px;
   }
   .about-me-container-container {
     max-width: 704px;
@@ -227,7 +227,7 @@
     max-width: 1376px;
   }
   .skills-list {
-    max-width: 1376px;
+    max-width: 1336px;
   }
   .about-me-container-container {
     max-width: 1376px;
