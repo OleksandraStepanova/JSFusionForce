@@ -67,7 +67,7 @@
           </ul>
         </div>
         <div class="mobile-dv">
-          <button class="mobile-button-menu" type="button">
+          <button id="burger" class="mobile-button-menu" type="button">
             <svg
               class="mobile-button-icon"
               width="28"
@@ -240,7 +240,7 @@
               </li>            
             </ul>
   
-            <button type="button" name="about-me-btn" class ="btn-next about-me-icon-skills-wrap">
+            <button type="button" id="about-me-btn" class ="btn-next about-me-icon-skills-wrap">
               <svg class="about-me-icon-skills" width="40" height="40">
                 <use href="/JSFusionForce/assets/icons-ab806b30.svg#icon-arrow"></use>
               </svg>
@@ -448,26 +448,28 @@
         </ul>
         <div class="nav-btn">
           <button
+           id="projects-next"
             type="button"
             disabled=""
             class="btn no-active btn-prev"
-            name="btn-prev"
+            aria-label="btn-prev"
           >
             <svg
               class="content-icon left"
               width="24"
               height="24"
-              aria-label="icon-arrow"
+              aria-label ="icon-arrow"
             >
               <use href="/JSFusionForce/assets/icons-ab806b30.svg#icon-arrow"></use>
             </svg>
           </button>
 
           <button
+           id="projects-prev"
             type="button"
             disabled=""
             class="btn btn-next"
-            name="btn-next"
+            aria-label ="btn-next"
           >
             <svg
               class="content-icon"
@@ -489,7 +491,7 @@
     <h5 class="faq-title">FAQ</h5>
     <ul class="faq-list">
       <li class="faq-element">
-        <button class="accordion-button visually-hidden" type="button">
+        <button id="accordion-button-more" class="accordion-button visually-hidden" type="button">
           <svg
             class="accordion-button-icon"
             width="20"
@@ -499,7 +501,7 @@
             <use href="/JSFusionForce/assets/icons-ab806b30.svg#icon-more"></use>
           </svg>
         </button>
-        <button class="accordion-button " type="button">
+        <button id="accordion-button-less" class="accordion-button " type="button">
           <svg
             class="accordion-button-icon"
             width="20"
@@ -744,7 +746,7 @@
           <div class="swiper swiper-reviews">
             <ul class="reviews-list swiper-wrapper" id="results-reviews"></ul>
             <div class="reviews-btn">
-              <button type="button" class="btn swiper-button-prev no-active">
+              <button id="reviews-next" type="button" class="btn swiper-button-prev no-active">
                 <svg
                   class="arrow-reviews-icon left"
                   width="24"
@@ -755,7 +757,7 @@
                 </svg>
               </button>
 
-              <button type="button" class="btn swiper-button-next">
+              <button id="reviews-prev" type="button" class="btn swiper-button-next">
                 <svg
                   class="arrow-reviews-icon"
                   width="24"
@@ -838,7 +840,7 @@
     <div class="modal-window-mb i-open">
  
     
-    <button class="modal-menu-close-btn" type="button">
+    <button id="close" class="modal-menu-close-btn" type="button">
       <svg class="modal-menu-close-btn-icon" width="28" height="28" aria-label="modal-menu-close-icon">
         <use href="/JSFusionForce/assets/icons-ab806b30.svg#icon-close"></use>
       </svg>
