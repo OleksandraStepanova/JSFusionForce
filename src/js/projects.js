@@ -4,7 +4,7 @@ Swiper.use([Navigation, Keyboard, Mousewheel]);
 
 import 'swiper/css';
 
-new Swiper('.swiper-projects', {
+const swiperProgects =  new Swiper('.swiper-projects', {
   slidesPerView: 'auto',
   loop: false,
   speed: 400,
@@ -22,17 +22,17 @@ new Swiper('.swiper-projects', {
   },
 
   mousewheel: { sensitivity: 1 },
-
-  on: {
-    reachEnd: function () {
-      document.querySelector('.btn-prev').classList.remove('no-active');
-      document.querySelector('.btn-next').classList.add('no-active');
-    },
-
-    reachBeginning: function () {
-      document.querySelector('.btn-next').classList.remove('no-active');
-
-      document.querySelector('.btn-prev').classList.add('no-active');
-    },
-  },
 });
+
+
+swiperProgects.on('slideChange', function () {
+  if (swiperProgects.isBeginning){      
+      document.querySelector('.btn-prev').classList.add('no-active');      
+    }else if (swiperProgects.isEnd) {      
+      document.querySelector('.btn-next').classList.add('no-active');
+    }
+  else {
+    document.querySelector('.btn-prev').classList.remove('no-active');
+    document.querySelector('.btn-next').classList.remove('no-active');
+  }
+})

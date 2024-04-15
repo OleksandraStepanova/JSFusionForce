@@ -29,25 +29,26 @@ export const reviewsSwiper = new Swiper('.swiper-reviews', {
   },
   spaceBetween: 16,
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.reviews-btn-next',
+    prevEl: '.reviews-btn-prev',
   },
   // lazyPreloadPrevNext: 1,
   grabCursor: true,
-  on: {
-    reachEnd: function () {
-            document.querySelector('.swiper-button-prev').classList.remove('no-active');
-      document.querySelector('.swiper-button-next').classList.add('no-active');
 
-    },
-    reachBeginning: function () {
-            document.querySelector('.swiper-button-next').classList.remove('no-active');
-      document.querySelector('.swiper-button-prev').classList.add('no-active');
-
-    },
-  },
   speed: 800,
 });
+
+reviewsSwiper.on('slideChange', function () {
+  if (reviewsSwiper.isBeginning) {
+    document.querySelector('.reviews-btn-prev').classList.add('no-active');      
+  } else if (reviewsSwiper.isEnd) {
+    document.querySelector('.reviews-btn-next').classList.add('no-active');
+  }
+  else {
+    document.querySelector('.btn-prev').classList.remove('no-active');
+    document.querySelector('.btn-next').classList.remove('no-active');
+  }
+})
 //=====================/Slider======================//
 
 //=====================Render======================//
