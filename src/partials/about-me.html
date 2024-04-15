@@ -40,22 +40,18 @@
           />
         </picture>
       </div>
-      <ul class="about-me-list">
-        <li class="about-me-item">
+      <ul class="about-me-list accordion-container">
+        <li class="about-me-item ac">
           <div class="about-me-wrap-title-line">
-            <h3 class="about-me-item-title">About me</h3>
-            <div class="about-me-wrap-icon">
-              <svg
-                class="about-me-icon about-me-icon-open"
-                width="20"
-                height="20"
-              >
+            <h3 class="about-me-item-title ac-header">About me</h3>
+            <button type="button" class="about-me-wrap-icon ac-trigger">
+              <svg class="about-me-icon" width="20" height="20">
                 <use href="./img/icons.svg#icon-more"></use>
               </svg>
-            </div>
+            </button>
           </div>
-          <div class="about-me-item-wrap-text">
-            <p class="about-me-item-text">
+          <div class="about-me-item-wrap-text ac-panel">
+            <p class="about-me-item-text ac-text">
               I am Lloyd Jefferson, a talented programmer with extensive
               expertise in software development. I have an understanding of
               different programming languages and technologies, always ready to
@@ -63,8 +59,7 @@
               unconventional, creative solutions to problems. I have a high
               level of analytical skills and am able to effectively solve even
               the most difficult tasks encountered on the way.
-            </p>
-            <p class="about-me-item-text">
+              <br /><br />
               Able to work both independently and in a team. I can effectively
               cooperate with colleagues, exchanging ideas and finding optimal
               solutions. Professional maturity allows you to calmly cope with
@@ -78,37 +73,53 @@
             </p>
           </div>
         </li>
-        <li class="about-me-item">
+        <li class="about-me-item ac">
           <div class="about-me-wrap-title-line">
-            <h3 class="about-me-item-title">Role</h3>
-            <div class="about-me-wrap-icon">
+            <h3 class="about-me-item-title ac-header">Role</h3>
+            <button type="button" class="about-me-wrap-icon ac-trigger">
               <svg class="about-me-icon" width="20" height="20">
-                <use href="./img/icons.svg#icon-more"></use>
+                <use href="./img/icons.svg#icon-less"></use>
               </svg>
-            </div>
+            </button>
+          </div>
+          <div class="about-me-item-wrap-text ac-panel">
+            <p class="about-me-item-text ac-text">
+              Frontend development<br /><br />
+              HEadlessCMC, Wordpress,<br /><br />
+              Blender(enjoy)<br /><br />
+            </p>
           </div>
         </li>
-        <li class="about-me-item">
+        <li class="about-me-item ac">
           <div class="about-me-wrap-title-line">
-            <h3 class="about-me-item-title">Education</h3>
-            <div class="about-me-wrap-icon">
+            <h3 class="about-me-item-title ac-header">Education</h3>
+            <button type="button" class="about-me-wrap-icon ac-trigger">
               <svg class="about-me-icon" width="20" height="20">
-                <use href="./img/icons.svg#icon-more"></use>
+                <use href="./img/icons.svg#icon-less"></use>
               </svg>
-            </div>
+            </button>
+          </div>
+          <div class="about-me-item-wrap-text ac-panel">
+            <p class="about-me-item-text ac-text">
+              2018 - 2019 / Frontend Development Diploma, GoIT IT<br />
+              School, New York<br /><br />
+              2019 - 2020 / Advanced Web Development Certificate, GoIT IT<br />
+              School, New York<br /><br />
+              2020 - 2022 / Advanced Blender Animation Techniques, Udemy
+            </p>
           </div>
         </li>
       </ul>
       <div class="swiper-container">
         <div class="about-me-container-container">
-          <div class="swiper swiper-about-me ">
-            <ul class="swiper-wrapper skills-list">           
+          <div class="swiper swiper-about-me">
+            <ul class="swiper-wrapper skills-list">
               <li class="skills-item-wrap swiper-slide skills-item-wrap-activ">
                 <p class="skills-item">HTML/CSS</p>
-              </li>     
+              </li>
               <li class="skills-item-wrap swiper-slide">
                 <p class="skills-item">JavaScript</p>
-              </li>  
+              </li>
               <li class="skills-item-wrap swiper-slide">
                 <p class="skills-item">React</p>
               </li>
@@ -120,10 +131,15 @@
               </li>
               <li class="skills-item-wrap swiper-slide">
                 <p class="skills-item">Soft skills</p>
-              </li>            
+              </li>
             </ul>
-  
-            <button type="button" id="about-me-btn"  aria-label="about me skills" class ="btn-next about-me-icon-skills-wrap">
+
+            <button
+              type="button"
+              id="about-me-btn"
+              aria-label="about me skills"
+              class="btn-next about-me-icon-skills-wrap"
+            >
               <svg class="about-me-icon-skills" width="40" height="40">
                 <use href="./img/icons.svg#icon-arrow"></use>
               </svg>
