@@ -41,10 +41,12 @@ export const reviewsSwiper = new Swiper('.swiper-reviews', {
 reviewsSwiper.on('slideChange', function () {
   if (reviewsSwiper.isBeginning) {
     document.querySelector('.reviews-btn-prev').classList.add('no-active');      
-  } 
+  } else if (reviewsSwiper.isEnd) {
+    document.querySelector('.reviews-btn-next').classList.add('no-active');
+  }
   else {
-    document.querySelector('.btn-prev').classList.remove('no-active');
-    document.querySelector('.btn-next').classList.remove('no-active');
+    document.querySelector('.reviews-btn-prev').classList.remove('no-active');
+    document.querySelector('.reviews-btn-next').classList.remove('no-active');
   }
 })
 //=====================/Slider======================//
