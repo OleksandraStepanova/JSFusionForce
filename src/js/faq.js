@@ -18,7 +18,6 @@ document.addEventListener('DOMContentLoaded', function () {
       if (accordionContent.classList.contains('active')) {
         useElement.classList.add('icon-more');
         useElement.classList.remove('icon-less');
-       
         icon.classList.add('rotate-icon');
       } else {
         useElement.classList.add('icon-less');
