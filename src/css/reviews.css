@@ -113,7 +113,7 @@
   text-align: left;
 }
 #reviews-text-err {
-  width: 295px;
+  width: 343px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -132,11 +132,20 @@
   pointer-events: none;
 }
 
+@media screen and (max-width: 374px) {
+  #reviews-text-err {
+    width: 295px;
+  }
+}
+
 /* ================/Mobile==================== */
 
 /* =================Tablet==================== */
 
 @media screen and (min-width: 768px) {
+  #reviews-text-err {
+    min-width: 768px;
+  }
   .title-section {
     margin-left: 32px;
   }
@@ -160,6 +169,9 @@
 /* ==================Desktop================= */
 
 @media screen and (min-width: 1140px) {
+  #reviews-text-err {
+    min-width: 1376px;
+  }
   .reviews-list {
     max-width: 1376px;
   }
