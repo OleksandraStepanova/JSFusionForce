@@ -1,0 +1,256 @@
+.work-together {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-image: url(../img/background/work-together-bg.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 120%;
+}
+@media only screen and (min--moz-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 2/1),
+  only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (-min-device-pixel-ratio: 2) {
+  .work-together {
+    background-image: url(../img/background/work-together-bg@2x.png);
+  }
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.title-box {
+  margin-bottom: 64px;
+}
+.upper-part {
+  display: flex;
+  align-items: center;
+}
+.title-upper,
+.title-lower {
+  font-size: 40px;
+}
+.title-accent {
+  color: var(--button-text);
+}
+.title-picture {
+  margin-right: 8px;
+}
+
+.input-email::placeholder,
+.input-comment::placeholder {
+  font-size: 16px;
+  color: rgb(250, 250, 250, 0.6);
+}
+.input-email,
+.input-comment {
+  color: var(--main-text);
+  font-size: 16px;
+
+  width: 100%;
+  padding: 0 2px 20px 2px;
+
+  outline: none;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(250, 250, 250, 0.2);
+}
+.input-email:hover,
+.input-email:focus,
+.input-comment:hover,
+.input-comment:focus {
+  border-bottom: 1px solid var(--main-text);
+}
+.input-success:hover,
+.input-success:focus {
+  border-bottom: 1px solid #3cbc81;
+}
+.input-error:hover,
+.input-error:focus {
+  border-bottom: 1px solid #e74a3b;
+}
+.input-comment {
+  margin-top: 16px;
+  margin-bottom: 32px;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+}
+
+.submit-btn {
+  font-size: 16px;
+  color: var(--main-text);
+  background-color: var(--button-text);
+  border: none;
+  border-radius: 50%;
+  padding: 40px 32px;
+  margin-bottom: 64px;
+}
+.submit-btn:hover,
+.submit-btn:focus {
+  background-color: #e0373f;
+}
+
+.contact-links {
+  display: flex;
+  align-items: center;
+  color: var(--main-text);
+  font-size: 14px;
+}
+.link-email,
+.link-tel {
+  letter-spacing: -0.02em;
+  cursor: pointer;
+  padding: 10px 12px;
+  border: 1px solid rgb(250, 250, 250, 0.2);
+  border-radius: 60px;
+}
+.link-email {
+  margin-right: 4px;
+}
+.link-email:hover,
+.link-email:focus,
+.link-tel:hover,
+.link-tel:focus {
+  border: 1px solid var(--main-text);
+}
+
+/* -----------------  modal ------------------ */
+
+.modal-overlay {
+  opacity: 0;
+  visibility: hidden;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 20;
+  transition: 0.3s all;
+}
+.modal-window {
+  opacity: 0;
+  visibility: hidden;
+
+  border: 1px solid rgba(250, 250, 250, 0.1);
+  border-radius: 20px;
+  position: fixed;
+  padding: 64px 32px;
+  width: 343px;
+  height: 276px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 30;
+  background-color: var(--background);
+}
+.modal-btn-close {
+  position: absolute;
+  padding: 0;
+  border: none;
+  width: 22px;
+  height: 22px;
+  top: 14px;
+  right: 14px;
+  background-color: transparent;
+  border-color: transparent;
+}
+.modal-btn-close-icon {
+  width: 22px;
+  height: 22px;
+  stroke: var(--main-text);
+}
+.modal-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: var(--main-text);
+  margin-bottom: 16px;
+}
+.modal-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: rgba(250, 250, 250, 0.6);
+}
+
+@media screen and (max-width: 374px) {
+  .contact-links {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .link-email {
+    margin-bottom: 8px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .title-upper,
+  .title-lower {
+    font-size: 60px;
+  }
+  .title-picture {
+    margin-right: 20px;
+  }
+  .form {
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+  }
+  .input-email,
+  .input-comment {
+    width: 245px;
+  }
+  .input-email {
+    margin-right: 32px;
+  }
+  .input-comment {
+    margin: 0 32px 0 0;
+  }
+  .submit-btn {
+    padding: 66px 56px;
+    margin-bottom: 0;
+  }
+  .link-email,
+  .link-tel {
+    padding: 18px 32px;
+  }
+  .link-email {
+    margin-right: 8px;
+  }
+  .modal-window {
+    padding: 64px;
+    width: 492px;
+    height: 246px;
+  }
+  .modal-btn-close {
+    width: 24px;
+    height: 24px;
+    top: 20px;
+    right: 20px;
+  }
+  .modal-btn-close-icon {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .input-email,
+  .input-comment {
+    width: 390px;
+  }
+  .input-comment {
+    margin-right: 86px;
+  }
+}

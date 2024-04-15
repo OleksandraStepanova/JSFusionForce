@@ -1,3 +1,67 @@
-<header class="header">
-
+<header class="header section-indent">
+  <div class="container">
+    <div class="header-container">
+      <div class="logo-header-img">
+        <div class="logo-dv">
+          <picture>
+            <source
+              srcset="
+                ./img/desktop/logo-desktop.png    1x,
+                ./img/desktop/logo-desktop@2x.png 2x
+              "
+              media="(min-width: 1280px)"
+            />
+            <source
+              srcset="
+                ./img/tablet/logo-tablet.png    1x,
+                ./img/tablet/logo-tablet@2x.png 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="./img/mobile/logo.png 1x, ./img/mobile/logo@2x.png 2x"
+              media="(max-width: 767px)"
+            />
+            <img
+              class="logo-img"
+              src="./img/mobile/logo.png"
+              alt="logo"
+              loading="lazy"
+            />
+          </picture>
+        </div>
+        <div class="logo-svg-header">
+          <svg class="logo-svg" width="84px" height="19px" aria-label="logo">
+            <use href="./img/logo.svg#icon-logo"></use>
+          </svg>
+        </div>
+      </div>
+      <nav class="nav-header">
+        <div class="menu-toggle">
+          <button class="menu-btn" aria-label="Menu">Menu</button>
+          <ul class="menu-nav">
+            <li><a href="#about-me">About me</a></li>
+            <li><a href="#benefits">Benefits</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="mobile-dv">
+          <button id="burger" class="mobile-button-menu" type="button">
+            <svg
+              class="mobile-button-icon"
+              width="28"
+              height="28"
+              aria-label="mobile menu button"
+            >
+              <use href="./img/icons.svg#icon-burger"></use>
+            </svg>
+          </button>
+        </div>
+        <span class="order">
+          <a href="#work-together" class="order-button">Order the project</a>
+        </span>
+      </nav>
+    </div>
+  </div>
 </header>
