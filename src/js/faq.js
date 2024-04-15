@@ -16,13 +16,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
       const useElement = button.querySelector('.accordion-button-icon use');
       if (accordionContent.classList.contains('active')) {
-        useElement.classList.add('icon-more');
-        useElement.classList.remove('icon-less');
-        icon.classList.add('rotate-icon');
+        useElement.setAttribute('href', './img/icons.svg#icon-more');
+        icon.style.transform = 'rotate(180deg)';
       } else {
-        useElement.classList.add('icon-less');
-        useElement.classList.remove('icon-more');
-        icon.classList.remove('rotate-icon');
+        useElement.setAttribute('href', './img/icons.svg#icon-less');
+        icon.style.transform = 'rotate(0deg)';
       }
       if (accordionContent.classList.contains('active')) {
         accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
