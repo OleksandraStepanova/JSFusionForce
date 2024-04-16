@@ -90,7 +90,7 @@
   width: 20px;
   height: 20px;
   background-image: url('./img/icons.svg');
-  background-position: 0px 0px; 
+  background-position: 0px 0px;
 }
 
 .icon-less::before {
@@ -99,7 +99,7 @@
   width: 20px;
   height: 20px;
   background-image: url('./img/icons.svg');
-  background-position: 20px 0px; 
+  background-position: 20px 0px;
 }
 .rotate-icon {
   transform: rotate(180deg);
