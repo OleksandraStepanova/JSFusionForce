@@ -35,7 +35,7 @@ export const aboutMeSwiper = new Swiper('.swiper-about-me', {
     invert: true,
   },
   navigation: {
-    nextEl: '.btn-next',
+    nextEl: '.about-me-btn-next',
   },
   navigationPosition: 'right',
   effect: 'fade',

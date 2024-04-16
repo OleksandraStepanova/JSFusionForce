@@ -40,15 +40,14 @@ export const reviewsSwiper = new Swiper('.swiper-reviews', {
 
 reviewsSwiper.on('slideChange', function () {
   if (reviewsSwiper.isBeginning) {
-    document.querySelector('.reviews-btn-prev').classList.add('no-active');      
+    document.querySelector('.reviews-btn-prev').classList.add('no-active');
   } else if (reviewsSwiper.isEnd) {
     document.querySelector('.reviews-btn-next').classList.add('no-active');
-  }
-  else {
+  } else {
     document.querySelector('.reviews-btn-prev').classList.remove('no-active');
     document.querySelector('.reviews-btn-next').classList.remove('no-active');
   }
-})
+});
 //=====================/Slider======================//
 
 //=====================Render======================//
@@ -74,10 +73,12 @@ const reviews = document.querySelector('.reviews-list');
 async function createReview() {
   try {
     const data = await getReviews();
-  
+
     const markup = reviewsTemplate(data);
     reviews.innerHTML = markup;
   } catch (error) {
-    console.log(error);
+    console.error('Error fetching reviews:', error);
+    reviews.innerHTML = '<p id="reviews-text-err">Not found</p>';
+    document.querySelector('.reviews-btn-next').classList.add('no-active');
   }
 }
