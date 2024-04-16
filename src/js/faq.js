@@ -14,10 +14,12 @@ document.addEventListener('DOMContentLoaded', function () {
       const useElement = button.querySelector('.accordion-button-icon use');
       if (accordionContent.classList.contains('active')) {
         useElement.setAttribute('xlink:href', './img/icons.svg#icon-more');
-        button.querySelector('.accordion-button-icon').style.transform = 'rotate(180deg)';
+        button.querySelector('.accordion-button-icon').style.transform =
+          'rotate(180deg)';
       } else {
         useElement.setAttribute('xlink:href', './img/icons.svg#icon-less');
-        button.querySelector('.accordion-button-icon').style.transform = 'rotate(0deg)';
+        button.querySelector('.accordion-button-icon').style.transform =
+          'rotate(0deg)';
       }
 
       if (accordionContent.classList.contains('active')) {
@@ -29,10 +31,17 @@ document.addEventListener('DOMContentLoaded', function () {
       const allAccordionItems = document.querySelectorAll('.faq-element');
       allAccordionItems.forEach(otherItem => {
         if (otherItem !== item) {
-          otherItem.querySelector('.accordion-content').classList.remove('active');
-          otherItem.querySelector('.accordion-button-icon').classList.remove('active');
-          otherItem.querySelector('.accordion-button-icon use').setAttribute('xlink:href', './img/icons.svg#icon-less');
-          otherItem.querySelector('.accordion-button-icon').style.transform = 'rotate(0deg)';
+          otherItem
+            .querySelector('.accordion-content')
+            .classList.remove('active');
+          otherItem
+            .querySelector('.accordion-button-icon')
+            .classList.remove('active');
+          otherItem
+            .querySelector('.accordion-button-icon use')
+            .setAttribute('xlink:href', './img/icons.svg#icon-less');
+          otherItem.querySelector('.accordion-button-icon').style.transform =
+            'rotate(0deg)';
           otherItem.querySelector('.accordion-content').style.maxHeight = null;
         }
       });

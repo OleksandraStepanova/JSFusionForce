@@ -91,10 +91,14 @@
   height: 20px;
 
   background-image: url('./img/icons.svg');
+
+  background-position: 0px 0px;
+=======
   background-position: 0px 0px; 
 =======
   background-image: url('../img/icons.svg');
   background-position: 0px 0px; /* Позиція вашої іконки в SVG-файлі */
+
 }
 
 .icon-less::before {
@@ -104,6 +108,9 @@
   height: 20px;
 
   background-image: url('./img/icons.svg');
+
+  background-position: 20px 0px;
+=======
   background-position: 20px 0px; 
 =======
   background-image: url('../img/icons.svg');
