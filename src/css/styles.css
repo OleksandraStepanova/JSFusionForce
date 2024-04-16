@@ -10,6 +10,14 @@
 @import url('./work-together.css');
 @import url('./mobile-menu.css');
 
+@font-face {
+  font-family: 'Inter Tight';
+  src: url('../font/InterTight-Medium.ttf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   font-family: 'Inter Tight', sans-serif;
 

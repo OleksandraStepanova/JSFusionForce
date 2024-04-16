@@ -19,6 +19,7 @@ export const aboutMeSwiper = new Swiper('.swiper-about-me', {
       slidesPerView: 6,
     },
   },
+speed: 800,
 
   initialSlide: 0,
   loop: true,
