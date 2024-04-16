@@ -2,7 +2,7 @@
   padding-top: 338px;
   padding-bottom: 32px;
   background-color: #1c1d20;
-  background-image: url('../img/background/hero-mobile.png');
+  background-image: url('../img/background/hero-mobile.webp');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% center;
@@ -10,7 +10,7 @@
 }
 @media (min-resolution: 192dpi) {
   .hero {
-    background-image: url('../img/background/hero-mobile@2x.png');
+    background-image: url('../img/background/hero-mobile@2x.webp');
   }
 }
 .hero-title-dv {
@@ -86,12 +86,12 @@
 
 @media (min-width: 768px) {
   .hero {
-    background-image: url('../img/background/red-hero.png');
+    background-image: url('../img/background/red-hero.webp');
     background-position: 50% center;
   }
   @media (min-resolution: 192dpi) {
     .hero {
-      background-image: url('../img/background/red-hero@2x.png');
+      background-image: url('../img/background/red-hero@2x.webp');
     }
   }
   .add-container {
@@ -103,12 +103,12 @@
 }
 @media (min-width: 1440px) {
   .hero {
-    background-image: url('../img/background/red-hero-pc.png');
+    background-image: url('../img/background/red-hero-pc.webp');
     background-position: 50% center;
   }
   @media (min-resolution: 192dpi) {
     .hero {
-      background-image: url('../img/background/red-hero-pc@2x.png');
+      background-image: url('../img/background/red-hero-pc@2x.webp');
     }
   }
   .add-container {

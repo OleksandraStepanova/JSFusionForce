@@ -1,8 +1,14 @@
 .covers {
+
   min-width: 375px;
+
+
+
+
   width: 100%;
   height: 960px;
-  background: url(../img/covers/elements_vectors.png);
+  background: url(../img/covers/elements_vectors.webp);
+
   position: relative;
   overflow: hidden;
 }

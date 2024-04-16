@@ -1,5 +1,4 @@
-// import Swiper from 'swiper';
-// import 'swiper/css';
+
 import Swiper from 'swiper';
 import { Navigation, Keyboard, Mousewheel, Pagination } from 'swiper/modules';
 Swiper.use([Navigation, Keyboard, Mousewheel, Pagination]);
@@ -17,7 +16,7 @@ export const aboutMeSwiper = new Swiper('.swiper-about-me', {
       slidesPerView: 3,
     },
     1440: {
-      slidesPerView: 5,
+      slidesPerView: 6,
     },
   },
 
