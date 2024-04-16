@@ -7,7 +7,7 @@ import 'swiper/css';
 const swiperProgects =  new Swiper('.swiper-projects', {
   slidesPerView: 'auto',
   loop: false,
-  speed: 400,
+  
   grabCursor: true,
   spaceBetween: 16,
   slidesPerView: 1,
@@ -20,6 +20,7 @@ const swiperProgects =  new Swiper('.swiper-projects', {
     nextEl: '.btn-next',
     prevEl: '.btn-prev',
   },
+  speed: 800,
 
   mousewheel: { sensitivity: 1 },
 });
