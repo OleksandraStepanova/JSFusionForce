@@ -14,7 +14,7 @@
     <script type="module" crossorigin src="/JSFusionForce/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/JSFusionForce/assets/vendor-8a454a08.js">
     <link rel="stylesheet" href="/JSFusionForce/assets/vendor-7c8ef494.css">
-    <link rel="stylesheet" href="/JSFusionForce/assets/index-94fc0e29.css">
+    <link rel="stylesheet" href="/JSFusionForce/assets/index-bc086f0c.css">
   </head>
   <body>
 
@@ -169,7 +169,7 @@
       </div>
       <ul class="about-me-list accordion-container">
         <li class="about-me-item ac">
-          <div class="ac-trigger">
+          <div class="ac-trigger ac-trigger-about-me">
             <div class="about-me-wrap-title-line">
               <h3 class="about-me-item-title ac-header">About me</h3>
               <button
@@ -207,7 +207,7 @@
           </div>
         </li>
         <li class="about-me-item ac">
-          <div class="ac-trigger">
+          <div class="ac-trigger ac-trigger-about-me">
             <div class="about-me-wrap-title-line">
               <h3 class="about-me-item-title ac-header">Role</h3>
               <button
@@ -230,7 +230,7 @@
           </div>
         </li>
         <li class="about-me-item ac">
-          <div class="ac-trigger">
+          <div class="ac-trigger ac-trigger-about-me">
             <div class="about-me-wrap-title-line">
               <h3 class="about-me-item-title ac-header">Education</h3>
               <button
@@ -546,76 +546,57 @@
   </div>
 </section>
 
-    <section class="faq" id="faq">
-  <div class="container">
+    <section class="container section-indent" id="faq">
+  <div class="faq-container">
     <h2 class="faq-title">FAQ</h2>
-    <ul class="faq-list">
-      <li class="faq-element">
-        <button
-          id="accordion-button-more"
-          aria-label="faq more"
-          class="accordion-button accordion-button visually-hidden"
-          type="button"
-        >
-          <svg
-            class="accordion-button-icon"
-            width="20"
-            height="20"
-            aria-label="accordion button icon"
+    <ul class="faq-list accordion-container-faq">
+      <li class="faq-element ac">
+        <div class="faq-element-title-wrap ac-trigger .ac-trigger-faq">
+          <h3 class="faq-list-title ac-header ac-header">
+            What programming languages ?are most often used in your project?
+          </h3>
+          <button
+            id="accordion-button-less "
+            aria-label="faq less"
+            class="accordion-button"
+            type="button"
           >
-            <use href="/JSFusionForce/assets/icons-ab806b30.svg#icon-more"></use>
-          </svg>
-        </button>
-        <button
-          id="accordion-button-less"
-          aria-label="faq less"
-          class="accordion-button accordion-button"
-          type="button"
-        >
-          <svg
-            class="accordion-button-icon"
-            width="20"
-            height="20"
-            aria-label="accordion button icon"
-          >
-            <use href="/JSFusionForce/assets/icons-ab806b30.svg#icon-less"></use>
-          </svg>
-        </button>
-        <h3 class="faq-list-title">
-          What programming languages ​are most often used in your project?
-        </h3>
-        <div class="accordion-content">
-          <p class="faq-text">
+            <svg
+              class="accordion-button-icon"
+              width="20"
+              height="20"
+              aria-label="accordion button icon"
+            >
+              <use href="/JSFusionForce/assets/icons-ab806b30.svg#icon-less"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="accordion-content ac-panel">
+          <p class="faq-text ac-text">
             In the field of web development, there are various technologies and
             programming languages. Typically, this includes a combination of
             frontend (client side) and backend (server side) languages.
           </p>
         </div>
       </li>
-      <li class="faq-element">
-        <button class="accordion-button visually-hidden" type="button">
-          <svg
-            class="accordion-button-icon"
-            width="20"
-            height="20"
-            aria-label="accordion button icon"
-          >
-            <use href="/JSFusionForce/assets/icons-ab806b30.svg#icon-more"></use>
-          </svg>
-        </button>
-        <button class="accordion-button" type="button">
-          <svg
-            class="accordion-button-icon"
-            width="20"
-            height="20"
-            aria-label="accordion button icon"
-          >
-            <use href="/JSFusionForce/assets/icons-ab806b30.svg#icon-less"></use>
-          </svg>
-        </button>
-        <h3 class="faq-list-title">What are the deadlines for the project?</h3>
-        <div class="accordion-content">
-          <p class="faq-text">
+      <li class="faq-element ac">
+        <div class="faq-element-title-wrap ac-trigger .ac-trigger-faq">
+          <h3 class="faq-list-title ac-header">
+            What are the deadlines for the project?
+          </h3>
+          <button class="accordion-button" type="button">
+            <svg
+              class="accordion-button-icon"
+              width="20"
+              height="20"
+              aria-label="accordion button icon"
+            >
+              <use href="/JSFusionForce/assets/icons-ab806b30.svg#icon-less"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="accordion-content ac-panel">
+          <p class="faq-text ac-text">
             The terms of project implementation depend to a large extent on a
             number of factors, such as the scope of the project, its complexity,
             and the availability of resources. Determining exact deadlines is a
@@ -624,90 +605,70 @@
           </p>
         </div>
       </li>
-      <li class="faq-element">
-        <button class="accordion-button visually-hidden" type="button">
-          <svg
-            class="accordion-button-icon"
-            width="20"
-            height="20"
-            aria-label="accordion button icon"
-          >
-            <use href="/JSFusionForce/assets/icons-ab806b30.svg#icon-more"></use>
-          </svg>
-        </button>
-        <button class="accordion-button" type="button">
-          <svg
-            class="accordion-button-icon"
-            width="20"
-            height="20"
-            aria-label="accordion button icon"
-          >
-            <use href="/JSFusionForce/assets/icons-ab806b30.svg#icon-less"></use>
-          </svg>
-        </button>
-        <h3 class="faq-list-title">What payment methods do you accept?</h3>
-        <div class="accordion-content">
-          <p class="faq-text">
+      <li class="faq-element ac">
+        <div class="faq-element-title-wrap ac-trigger .ac-trigger-faq">
+          <h3 class="faq-list-title ac-header">
+            What payment methods do you accept?
+          </h3>
+          <button class="accordion-button" type="button">
+            <svg
+              class="accordion-button-icon"
+              width="20"
+              height="20"
+              aria-label="accordion button icon"
+            >
+              <use href="/JSFusionForce/assets/icons-ab806b30.svg#icon-less"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="accordion-content ac-panel">
+          <p class="faq-text ac-text">
             Payment through credit and debit cards such as Visa, MasterCard,
             specialized electronic payment systems such as PayPal, as well as
             payments in cryptocurrencies such as Bitcoin, Ethereum and others.
           </p>
         </div>
       </li>
-      <li class="faq-element">
-        <button class="accordion-button visually-hidden" type="button">
-          <svg
-            class="accordion-button-icon"
-            width="20"
-            height="20"
-            aria-label="accordion button icon"
-          >
-            <use href="/JSFusionForce/assets/icons-ab806b30.svg#icon-more"></use>
-          </svg>
-        </button>
-        <button class="accordion-button" type="button">
-          <svg
-            class="accordion-button-icon"
-            width="20"
-            height="20"
-            aria-label="accordion button icon"
-          >
-            <use href="/JSFusionForce/assets/icons-ab806b30.svg#icon-less"></use>
-          </svg>
-        </button>
-        <h3 class="faq-list-title">How can I contact you?</h3>
-        <div class="accordion-content">
-          <p class="faq-text">
+      <li class="faq-element ac">
+        <div class="faq-element-title-wrap ac-trigger .ac-trigger-faq">
+          <h3 class="faq-list-title ac-header">How can I contact you?</h3>
+          <button class="accordion-button" type="button">
+            <svg
+              class="accordion-button-icon"
+              width="20"
+              height="20"
+              aria-label="accordion button icon"
+            >
+              <use href="/JSFusionForce/assets/icons-ab806b30.svg#icon-less"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="accordion-content ac-panel">
+          <p class="faq-text ac-text">
             In the field of web development, there are various technologies and
             programming languages. Typically, this includes a combination of
             frontend (client side) and backend (server side) languages.
           </p>
         </div>
       </li>
-      <li class="faq-element">
-        <button class="accordion-button visually-hidden" type="button">
-          <svg
-            class="accordion-button-icon"
-            width="20"
-            height="20"
-            aria-label="accordion button icon"
-          >
-            <use href="/JSFusionForce/assets/icons-ab806b30.svg#icon-more"></use>
-          </svg>
-        </button>
-        <button class="accordion-button" type="button">
-          <svg
-            class="accordion-button-icon"
-            width="20"
-            height="20"
-            aria-label="accordion button icon"
-          >
-            <use href="/JSFusionForce/assets/icons-ab806b30.svg#icon-less"></use>
-          </svg>
-        </button>
-        <h3 class="faq-list-title">Do you provide advice or support?</h3>
-        <div class="accordion-content">
-          <p class="faq-text">
+      <li class="faq-element ac">
+        <div class="faq-element-title-wrap ac-trigger .ac-trigger-faq">
+          <h3 class="faq-list-title ac-header">
+            Do you provide advice or support?
+          </h3>
+          <button class="accordion-button" type="button">
+            <svg
+              class="accordion-button-icon"
+              width="20"
+              height="20"
+              aria-label="accordion button icon"
+            >
+              <use href="/JSFusionForce/assets/icons-ab806b30.svg#icon-less"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="accordion-content ac-panel">
+          <p class="faq-text ac-text">
             The terms of project implementation depend to a large extent on a
             number of factors, such as the scope of the project, its complexity,
             and the availability of resources. Determining exact deadlines is a
@@ -716,33 +677,25 @@
           </p>
         </div>
       </li>
-      <li class="faq-element">
-        <button class="accordion-button visually-hidden" type="button">
-          <svg
-            class="accordion-button-icon"
-            width="20"
-            height="20"
-            aria-label="accordion button icon"
-          >
-            <use href="/JSFusionForce/assets/icons-ab806b30.svg#icon-more"></use>
-          </svg>
-        </button>
-        <button class="accordion-button" type="button">
-          <svg
-            class="accordion-button-icon"
-            width="20"
-            height="20"
-            aria-label="accordion button icon"
-          >
-            <use href="/JSFusionForce/assets/icons-ab806b30.svg#icon-less"></use>
-          </svg>
-        </button>
-        <h3 class="faq-list-title">
-          What does the process of developing a software product look like from
-          idea to implementation?
-        </h3>
-        <div class="accordion-content">
-          <p class="faq-text">
+      <li class="faq-element ac">
+        <div class="faq-element-title-wrap ac-trigger .ac-trigger-faq">
+          <h3 class="faq-list-title ac-header">
+            What does the process of developing a software product look like
+            from idea to implementation?
+          </h3>
+          <button class="accordion-button" type="button">
+            <svg
+              class="accordion-button-icon"
+              width="20"
+              height="20"
+              aria-label="accordion button icon"
+            >
+              <use href="/JSFusionForce/assets/icons-ab806b30.svg#icon-less"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="accordion-content ac-panel">
+          <p class="faq-text ac-text">
             Payment through credit and debit cards such as Visa, MasterCard,
             specialized electronic payment systems such as PayPal, as well as
             payments in cryptocurrencies such as Bitcoin, Ethereum and others.
