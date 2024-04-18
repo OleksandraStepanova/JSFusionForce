@@ -1,4 +1,3 @@
-
 import Swiper from 'swiper';
 import { Navigation, Keyboard, Mousewheel, Pagination } from 'swiper/modules';
 Swiper.use([Navigation, Keyboard, Mousewheel, Pagination]);
@@ -19,7 +18,7 @@ export const aboutMeSwiper = new Swiper('.swiper-about-me', {
       slidesPerView: 6,
     },
   },
-speed: 400,
+  speed: 400,
 
   initialSlide: 0,
   loop: true,
@@ -71,4 +70,20 @@ new Accordion('.accordion-container', {
   activeClass: 'is-active',
   showMultiple: true,
   openOnInit: [0],
+  onOpen: function (currentElement) {
+    const buttons = currentElement.querySelectorAll('.ac-trigger');
+    const icons = currentElement.querySelectorAll('.about-me-icon');
+
+    buttons.forEach((button, index) => {
+      button.addEventListener('click', () => {
+        const icon = icons[index];
+        const isOpen = icon.classList.contains('about-me-icon-open');
+        if (isOpen) {
+          icon.classList.remove('about-me-icon-open');
+        } else {
+          icon.classList.add('about-me-icon-open');
+        }
+      });
+    });
+  },
 });
