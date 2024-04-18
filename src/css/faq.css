@@ -55,6 +55,7 @@
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: -0.02em;
+  width: 343px;
 }
 
 @media (min-width: 768px) {
@@ -64,6 +65,9 @@
 
   .faq-list-title {
     max-width: 485px;
+  }
+  .faq-text {
+    width: 656px;
   }
 }
 
@@ -81,5 +85,9 @@
   }
   .accordion-button {
     right: 32px;
+  }
+  .faq-element {
+    padding-bottom: 32px;
+    padding-top: 32px;
   }
 }
