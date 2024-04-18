@@ -12,11 +12,11 @@ const iconsFaq = document.querySelectorAll('.accordion-button-icon');
 buttonsFaq.forEach((button, index) => {
   button.addEventListener('click', () => {
     const icon = iconsFaq[index];
-    const isOpen = icon.classList.contains('about-me-icon-open');
+    const isOpen = icon.classList.contains('accordion-button-icon-open');
     if (isOpen) {
-      icon.classList.remove('about-me-icon-open');
+      icon.classList.remove('accordion-button-icon-open');
     } else {
-      icon.classList.add('about-me-icon-open');
+      icon.classList.add('accordion-button-icon-open');
     }
   });
 });
